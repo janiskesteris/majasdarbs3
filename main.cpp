@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     int loop = 1;
     while(loop)
     {
-        system("stty raw");
+        system("stty raw"); //http://stackoverflow.com/a/1799024/1909627
         key = getchar();
         switch(key)
         {
@@ -38,7 +38,7 @@ int main(int argc, const char * argv[]) {
         }else{
             printf("\n");
         }
-        system("stty cooked");
+        system("stty cooked"); //http://stackoverflow.com/a/1799024/1909627
     }
 
     delete menuController;

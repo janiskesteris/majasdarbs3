@@ -12,14 +12,14 @@ MenuController::MenuController() {
 }
 
 void MenuController::display() {
-    stringstream menuString;
+    stringstream menuString; //stringstream atļauj modifcēt definētu string mainīgo kura izmērs var patvaļīgi mainīties
 
     int menuItemCount = getMenuItemCount();
     for(int i=0;i<menuItemCount;++i){
         menuString << " " << menuItems[i]->formattedLabel(this->hoverStateActive) << " ";
     };
     printf("\r"); //atgriež kursoru uz 0to pozīciju rindā
-    printf(menuString.str().c_str());
+    printf(menuString.str().c_str()); //pārvērš stringstream uz char mainīgā tipu
 }
 
 size_t MenuController::getMenuItemCount() const { return sizeof(menuItems) / sizeof(menuItems[0]); }
