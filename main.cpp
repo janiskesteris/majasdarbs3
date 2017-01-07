@@ -54,7 +54,7 @@ int main(int argc, const char * argv[]) {
     MenuController *menuController = new MenuController();
     menuController->menuItems[0] = new MenuItem(1, "File", false);
     menuController->menuItems[1] = new MenuItem(2, "Edit", true);
-    menuController->menuItems[2] = new MenuItem(3, "View", true);
+    menuController->menuItems[2] = new MenuItem(3, "View", false);
     menuController->menuItems[3] = new MenuItem(4, "Tools", false);
     menuController->menuItems[4] = new MenuItem(5, "Help", true);
     menuController->display();
