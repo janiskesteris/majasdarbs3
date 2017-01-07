@@ -37,7 +37,3 @@ void MenuItem::removeHighlight() {
 void MenuItem::display() {
     cout << endl << "\r" << this->label << " -> id: " << this->id << endl;
 }
-
-//MenuItem::MenuItem(int id, const char label, bool disabled) {
-//
-//}

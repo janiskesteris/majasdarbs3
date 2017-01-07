@@ -18,14 +18,13 @@ void MenuController::display() {
     for(int i=0;i<menuItemCount;++i){
         menuString << " " << menuItems[i]->formattedLabel(this->hoverStateActive) << " ";
     };
-    printf("\r");
+    printf("\r"); //atgriež kursoru uz 0to pozīciju rindā
     printf(menuString.str().c_str());
 }
 
 size_t MenuController::getMenuItemCount() const { return sizeof(menuItems) / sizeof(menuItems[0]); }
 
 void MenuController::selectNextItem() {
-//    int candidateItemIndex;
     int nextItemIndex = this->currentMenuItemIndex + 1;
     int lastItemIndex = getMenuItemCount() - 1;
     if(this->currentMenuItemIndex == -1 || nextItemIndex > lastItemIndex){
