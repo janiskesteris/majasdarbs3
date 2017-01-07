@@ -16,6 +16,20 @@ public:
     void display();
 
     MenuItem *menuItems[5];
+
+    void selectNextItem();
+
+    int currentMenuItemIndex;
+
+    size_t getMenuItemCount() const;
+
+    void removeItemHighlighting();
+
+    void toggleHoverState();
+
+    bool hoverStateActive;
+
+    void displaySelectedMenuItem();
 };
 
 

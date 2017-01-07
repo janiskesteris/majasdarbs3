@@ -9,14 +9,26 @@
 class MenuItem {
 
 public:
-    MenuItem(int id, const char label);
-
     MenuItem(int id, const char *label);
+
+    MenuItem(int id, const char label, bool disabled);
+
+    MenuItem(int id, const char *label, bool disabled);
 
     int id;
     const char *label;
 
-    const char *display();
+    const char *formattedLabel(bool b);
+
+    void setAsHighlighted();
+
+    bool highlighted;
+
+    void removeHighlight();
+
+    bool disabled;
+
+    void display();
 };
 
 
