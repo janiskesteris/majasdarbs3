@@ -1,7 +1,3 @@
-//
-// Created by Janis Kesteris on 07/01/17.
-//
-
 #include "MenuItem.h"
 #include <sstream>
 #include <iostream>

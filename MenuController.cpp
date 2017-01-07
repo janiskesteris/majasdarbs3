@@ -1,6 +1,3 @@
-//
-// Created by Janis Kesteris on 07/01/17.
-//
 #include <iostream>
 #include "MenuController.h"
 #include <sstream>

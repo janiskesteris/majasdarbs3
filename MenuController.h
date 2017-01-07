@@ -1,7 +1,3 @@
-//
-// Created by Janis Kesteris on 07/01/17.
-//
-
 #ifndef MAJASDARBS3_MENUCONTROLLER_H
 #define MAJASDARBS3_MENUCONTROLLER_H
 
